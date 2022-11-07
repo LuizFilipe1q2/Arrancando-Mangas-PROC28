@@ -87,12 +87,13 @@ function draw() {
 
 function mouseDragged()
 {
-	//mover objeto
+Matter.Body.setPosition(stoneObj.body{x:mouseX,y:mouseY})
+
 }
 
 function mouseReleased()
 {
-	//ação ao soltar o mouse
+launcherObject.fly();
 }
 
 function keyPressed() {
